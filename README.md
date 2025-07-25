@@ -23,8 +23,8 @@
 
 ## 📝 Exercícios
 
-   1. **Estrutura Semântica Básica**: Criação de um arquivo index.html com uma estrutura de página clara, utilizando as tags <header>, <main>, <section> e <footer> para organizar o conteúdo de forma semântica.
-   2. **Listas e Navegação**: Desenvolvimento de um arquivo listas.html contendo listas ordenadas (<ol>) e não ordenadas (<ul>), além de um bloco de navegação (<nav>) com links externos.
+   1. **Estrutura Semântica Básica**: Criação de um arquivo index.html com uma estrutura de página clara, utilizando as tags `<header>`, `<main>`, `<section>` e `<footer>` para organizar o conteúdo de forma semântica.
+   2. **Listas e Navegação**: Desenvolvimento de um arquivo listas.html contendo listas ordenadas (`<ol>`) e não ordenadas (`<ul>`), além de um bloco de navegação (`<nav>`) com links externos.
    3. **Formulário de Feedback**: Construção de um formulário completo em feedback.html para coletar dados do usuário, incluindo campos de texto, e-mail e um botão de envio.
    4. **CSS Básico e Box Model**: Criação de uma folha de estilos styles.css para definir cores de fundo e de texto. Aplicação de margin, padding e border para evidenciar os contornos das seções principais da página.
    5. **Seletores e Propriedades**: Utilização de seletores de tag (h2), classe (.destaque) e ID (#importante) para aplicar estilos específicos, como aumento de fonte, sublinhado, itálico e bordas customizadas.
