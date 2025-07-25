@@ -1,0 +1,131 @@
+<!-- 4. CSS Básico e Box Model - Crie um arquivo styles.css e vincule-o em
+index.html:
+- Defina cores de fundo (background-color) e de texto (color) para <header>,
+<main> e <footer>.
+- Para cada uma dessas seções, aplique margin, padding e border de forma a
+evidenciar seus contornos.
+
+5. Seletores e Propriedades - No mesmo styles.css, adicione:
+- Um estilo para todas as tags <h2> que aumente a font-size e aplique text-
+decoration: underline.
+- Uma classe .destaque que deixe o texto em itálico (font-style: italic) e aplique
+um leve background-color.
+- Um ID #importante que adicione border-top mais espessa em um parágrafo
+específico.
+
+6. Exercício Grid e Flexbox - Monte uma galeria com oito imagens e legendas,
+organizadas por Grid. Além disso, envolva toda a galeria em um contêiner que
+utilize Flexbox para centralizar o conjunto na página e permitir que as figuras
+quebrem de linha quando a largura for limitada. Ajuste o número de colunas do
+Grid para telas menores por meio de media query.
+
+7. Menu Hamburger - implemente um menu “hamburger” que:
+- Apareça apenas em telas com largura ≤ 600 px.
+- Oculte a navegação padrão e abra/feche o menu ao ser clicado. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios 4, 5, 6 e 7</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Exercícios 4, 5, 6 e 7</h1>
+            <p>Essa página contempla os exercícios 4, 5, 6 e 7 da lista 3, do curso da +PraTi</p>
+
+            <button id="navToggle">
+                <img src="./assets/img/burger-icon.png" alt="Ícone de Menu hamburguer">
+            </button>
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <section>
+                <h2>Missão</h2>
+                <p id="importante">Oferecer soluções inovadoras com design e performance, focando na experiência do
+                    usuário.</p>
+            </section>
+            <section>
+                <h2>Visão</h2>
+                <p class="destaque">Ser referência no mercado de tecnologia, reconhecido pela qualidade e compromisso
+                    com a inovação.</p>
+            </section>
+        </div>
+
+        <section id="gallery-section">
+            <div class="container">
+                <h2>Top 8 Animes de todos os tempos</h2>
+
+                <div class="gallery-grid">
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/3/30/CodeGeassmovieposter.png"
+                            alt="Code Geass">
+                        <figcaption>Top 1 - Code Geass</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cdn.shopify.com/s/files/1/0070/1700/5113/files/shaman-king-kv.jpg?v=1614855498"
+                            alt="Shaman King">
+                        <figcaption>Top 2 - Shaman King</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/Bleach_Thousand-Year_Blood_War.png"
+                            alt="Bleach Thousand Year Blood War">
+                        <figcaption>Top 3 - Bleach TYBW</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Bleachanime.png/250px-Bleachanime.png"
+                            alt="Bleach Clássico">
+                        <figcaption>Top 4 - Bleach Clássico</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/d/d9/Adventure.jpg" alt="Digimon">
+                        <figcaption>Top 5 - Digimon</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/1/1f/Sao_2012.jpg" alt="Sword Art Online">
+                        <figcaption>Top 6 - Sword Art Online</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://m.media-amazon.com/images/M/MV5BM2M4YzdkMTEtMjUyYy00ZWY0LWI5ODQtNGRkZWQ1MzU5MWM2XkEyXkFqcGc@._V1_.jpg"
+                            alt="Solo Leveling">
+                        <figcaption>Top 7 - Solo Leveling</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://i5.walmartimages.com/asr/2c21d583-9de2-494b-ad02-f5930c3687f2.edaaa3e8e6dcbce33324af6981cfff3f.jpeg"
+                            alt="Konosuba">
+                        <figcaption>Top 8 - Konosuba</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Maurício. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
